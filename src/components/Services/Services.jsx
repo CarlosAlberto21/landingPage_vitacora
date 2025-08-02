@@ -3,12 +3,18 @@ import { FaReact } from 'react-icons/fa'
 import { FaShuttleSpace, FaSpaceAwesome } from 'react-icons/fa6'
 import { GiPlantsAndAnimals, GiPlantSeed } from 'react-icons/gi'
 import { PiNuclearPlant } from 'react-icons/pi'
+import img1 from '../../assets/carro1.png'
+import bgVideo from '../../assets/carro.mp4'
+import img2 from '../../assets/cohetrx.png'
+import img3 from '../../assets/co.png'
+import { IoFitnessSharp } from "react-icons/io5";
+
 const ServiceData = [
     {
     title: "FLORA",
     content: "CUIDAR" ,
     description: "Used for astronomical observations capturing stunning images of the universe",
-    icon: <GiPlantSeed className = "text-7xl" /> ,
+    icon: img1 ,
     aosDeplay: "300",
 
     },
@@ -17,7 +23,7 @@ const ServiceData = [
         title: "FAUNA",
         content: "PROTEJER" ,
         description: "Used for astronomical observations capturing stunning images of the universe",
-        icon: <GiPlantsAndAnimals className = "text-7xl" />, 
+        icon: img1,
         aosDeplay: "500",
         
         },
@@ -26,7 +32,7 @@ const ServiceData = [
             title: "AMBIENTE",
             content: "SANAR" ,
             description: "Used for astronomical observations capturing stunning images of the universe",
-            icon: <PiNuclearPlant  className = "text-7xl" /> ,
+            icon: img1,
             aosDeplay: "700",
             
             }
@@ -34,31 +40,67 @@ const ServiceData = [
 
 const Services = () => {
   return (
-    <div className='bg-white   text-lime-600  z-[50]'>
-        <div className='container'>
-            <div className='min-h-[400px]'>
-                <div className='grid grid-cols-1 sm:grid-cols-3 gap-6 relative z-10'>
+    <div className='bg-white py-8 z-[50] relative'
+           data-aos="fade-up"  // ← Aquí está la animación
+  data-aos-delay="100">
+        
+            <h1 className='text-4xl xl:text-5xl font-bold text-orange-500 text-center mb-3.5'>Services</h1>
+            <div className='grid grid-cols-1 sm:grid-cols-2 
+            lg:grid-cols-3 gap-8 ml-4 px-5'>
 
-                    {
-                        ServiceData.map(
-                            (data,index ) => (
-                                <div className='min-h-[180px] flex flex-col gap-2 justify-center items-center rounded-xl
-                                bg-white text-center backdrop-blur-sm py-8 px-3 w-full lg:w-[300px] border-r-2 border-b-2 border-lime-700 border-l-2
-                                mx-auto hover:bg-gradient-to-b hover:from-lime-50 hover:via-lime-100 hover:to-lime-200 hover:text-green-400 transition-all duration-500' >
-                                   {data.icon}
-                                    <h1>{data.title}</h1>
-                                    <p>{data.content}</p>
-                                    <p className=''>{data.description}</p>
-                                </div>
-                            
-                            )
-                        )
-                    }
-
+                <div className='py-10 p-5 bg-gradient-to-br from-yellow-300 to-black
+                text-white rounded-3xl relative h-[320px] flex items-end
+                transition-transform duration-300 ease-in-out transform hover:scale-105'>
+                    <div>
+                        <div className='mb-4'>
+                            <p className='mb-[2px]'>Professional </p>
+                            <p className='text-2xl  font-semibold'>Automotive </p>
+                            <p className='text-2xl xl:text-2xl text-orange-400 font-bold'>Window Tinting</p>
+                        </div>
+                    </div>
+                    <img src={img1} alt="" className='w-[200px] absolute
+                    bottom-0 right-0 
+                  '/>
                 </div>
+
+                <div className='py-10 pl-5 bg-gradient-to-br from-yellow-300 to-black
+                text-white rounded-3xl relative h-[320px] flex items-end
+                transition-transform duration-300 ease-in-out transform hover:scale-105'>
+                    <div>
+                        <div className='mb-4'>
+                            <p className='mb-[2px] '>Residential & Commercial </p>
+                            <p className='text-2xl  font-semibold'>Window Film </p>
+                            <p className='text-2xl xl:text-2xl text-orange-400  font-bold'> Solution</p>
+                        </div>
+                    </div>
+                    <img src={img2} alt="" className='w-[195px] absolute
+                    bottom-0 right-0'/>
+                </div>
+
+                <div className='py-10 pl-5 bg-gradient-to-br from-yellow-300 to-black
+                text-white rounded-3xl relative h-[320px] flex items-end
+                transition-transform duration-300 ease-in-out transform hover:scale-105'>
+                    <div>
+                        <div className='mb-4'>
+                            <p className='mb-[2px'> Premium </p>
+                            <p className='text-2xl  font-semibold'>Heat</p>
+                            <p className='text-2xl xl:text-2xl text-orange-400  font-bold'>Protection</p>
+
+                        </div>
+                         <img src={img3} alt="" className='w-[180px] absolute
+                    bottom-0 right-0'/>
+                    </div>
+                    
+                </div>
+        
             </div>
+            
+     
         </div>
-    </div>
+
+
+
+    
   )
 }
 

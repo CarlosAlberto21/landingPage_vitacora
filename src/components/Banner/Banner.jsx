@@ -1,29 +1,37 @@
 import React from 'react'
-import Bosque from '../../assets/bosque.png'
+import Bosque from '../../assets/window.webp'
+import bgVideo from '../../assets/carro.mp4'
 
 const Banner = () => {
   return (
-    <div className='bg-white text-lime-600 pb-12 relative z-50'>
-      <div className='container'>
+    <div className='bg-white text-gray-600 pb-12 relative z-50'>
+                    <video 
+      className='=absolute right-0 top-0 h-[700px] w-full object-cover z-[-1] '
+       autoPlay
+    muted
+    loop
+    playsInline>
+        <source  src={bgVideo} type="video/mp4"/>
+      </video>
+   
+      <div className='container'
+       data-aos="fade-left"  // ← Aquí está la animación
+  data-aos-delay="100">
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 items-center p-4'> 
             <div>
               <img src={Bosque} alt="" />
             </div>
-            <div className='space-y-3 xl:pr-36 p-8 border-r-2 border-b-2 border-lime-700
-            hover:bg-gradient-to-b hover:from-lime-50 
-            hover:via-lime-100 hover:to-lime-200 
-            hover:text-green-400 transition-all duration-500'>
-              <p className='text-lime-500 uppercase'> Nuestra Mission</p>
-              <h1 className='uppercase text-5xl'>Fauna</h1>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam consequuntur 
-                modi reiciendis 
-                unde adipisci corrupti optio quos, aliquam a doloribus! Lorem ipsum dolor sit amet, 
-                consectetur adipisicing elit. 
-                Illo maxime adipisci earum inventore aspernatur sint dignissimos beatae vitae possimus nobis vel velit, 
-                tempora doloribus laborum corporis magnam, eius expedita incidunt.</p>
-                <button className='bg-lime-400 text-white  px-4 hover:bg-lime-500 rounded-md  py-2 border-2 border-lime-400    '>
-                    Explora
-                    </button>
+            <div 
+  className='space-y-4 xl:pr-36 p-8 border-r-2 border-b-2 border-orange-100
+             hover:bg-gradient-to-b hover:from-yellow-200 
+             hover:via-yellow-100 hover:to-yellow-200 
+             hover:text-orange-400 transition-all duration-500'
+ 
+>
+           
+              <h1 className='uppercase text-5xl'>Mission</h1>
+              <p>Our mission is to provide high-quality window tinting solutions that enhance comfort, privacy, and protection for vehicles, homes, and businesses. We are committed to delivering exceptional service, using premium materials and professional installation to ensure long-lasting results and customer satisfaction.</p>
+                
             </div>
         </div>
       </div>
