@@ -67,12 +67,7 @@ const settings = {
   autoplaySpeed: 3000,
   arrows: false,
   responsive: [
-    {
-      breakpoint: 1280, // MENOS de 1280 px
-      settings: {
-        slidesToShow: 1,
-      }
-    },
+ 
     {
       breakpoint: 9999, // "trampa" para pantallas MUY grandes
       settings: {
