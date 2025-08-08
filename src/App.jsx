@@ -9,6 +9,10 @@ import Footer from './components/Footer/Footer'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react'
+import Contacto from './components/Contacto/Contacto'
+import Testimonial from './components/Testimonial/Testimonial'
+import Gps from './components/Gps/Gps'
+import Gaaleria from './components/Galeria/Gaaleria'
 
 const App = () => {
 
@@ -20,27 +24,26 @@ const App = () => {
   }, [])
 
   return (
-    <div className="overflow-x-hidden">
-      {/* Sección con fondo responsivo */}
-      <div className="relative min-h-screen">
-        {/* Imagen de fondo */}
-        <div
-  className="absolute inset-0 bg-center z-0 
-             bg-[length:100%_100%] sm:bg-cover"
-  style={{ backgroundImage: `url(${bg})` }}
->
-  <div className="absolute inset-0 bg-black opacity-40"></div>
-</div>
+    <div className="overflow-x-hidden bg-black">
+
         {/* Contenido encima del fondo */}
         <div className="relative z-10">
           <Nav />
+          
+      
           <Hero />
         </div>
-      </div>
+      
 
       <ServicesCards />
       <Banner />
       <Banner2 />
+      <Contacto/>
+      
+      <Testimonial/>
+      
+      <Gps/>
+      <Gaaleria/>
       <Footer />
     </div>
   )

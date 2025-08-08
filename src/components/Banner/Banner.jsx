@@ -4,7 +4,7 @@ import bgVideo from '../../assets/carro.mp4'
 
 const Banner = () => {
   return (
-    <div className='bg-white text-gray-600 pb-12 relative z-50'>
+    <div className='bg-black text-yellow-400 pb-12 relative z-50'>
                     <video 
       className='=absolute right-0 top-0 h-[700px] w-full object-cover z-[-1] '
        autoPlay
@@ -23,9 +23,7 @@ const Banner = () => {
             </div>
             <div 
   className='space-y-4 xl:pr-36 p-8 border-r-2 border-b-2 border-orange-100
-             hover:bg-gradient-to-b hover:from-yellow-200 
-             hover:via-yellow-100 hover:to-yellow-200 
-             hover:text-orange-400 transition-all duration-500'
+         '
  
 >
            

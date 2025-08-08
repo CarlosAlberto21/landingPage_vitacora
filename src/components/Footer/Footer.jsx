@@ -16,13 +16,13 @@ const Footer = () => {
 
     return (
         <>
-            <div className='bg-yellow-50 text-gray-700'>
+            <div className='bg-gradient-to-b from-yellow-300 to-orange-400 text-gray-700'>
                 <div className='max-w-[1200px] mx-auto '>
                     <div className=''>
                         <div className='py-8 px-4'>
                             <h1 className='flex items-center gap-3 text-xl sm:text-3xl font-bold text-justify sm:text-left'>
                                 <img src={Logo} alt="" className='max-w-[50px]' />
-                               <span className='text-orange-400'>Orlando Xpress Tint</span> 
+                               <span className='text-black'>Orlando Xpress Tint</span> 
                             </h1>
                             <p className='text-2xl font-bold text-justify mt-2 sm:text-left'>
                                © 2025 Orlando Xpress Tint. All rights reserved.
@@ -32,23 +32,23 @@ Serving Orlando with precision and care.
                             </p>
                             <br />
                             <div className='flex gap-3 items-center  text-2xl font-bold'>
-                                <FaLocationArrow className='text-orange-400 ' />
+                                <FaLocationArrow className='text-black ' />
                                    <a href={mapUrl} target="_blank" rel="noopener noreferrer">
-        Abrir en Google Maps
+        803 4th St suite 02-03, Orlando, FL 32824
       </a>
                             </div>
                             <div className='flex  gap-3 items-center mt-3 text-2xl font-bold'>
-                                <FaPhoneAlt className='text-orange-400' />
+                                <FaPhoneAlt className='text-black' />
                                 <p>407-603-6242</p>
                             </div>
                             {/*social handles*/}
                             <div >
                                 <div className="flex items-center gap-3 mt-6">
                                     <a href="https://www.facebook.com/profile.php?id=61576893956119#">
-                                        <FaFacebookF className='text-6xl text-orange-400' />
+                                        <FaFacebookF className='text-6xl text-black' />
                                     </a>
                                     <a href="https://www.instagram.com/orlandoxpresstint/">
-                                        <FaInstagram className='text-6xl text-orange-400' />
+                                        <FaInstagram className='text-6xl text-black' />
                                     </a>
                            
                                 </div>
