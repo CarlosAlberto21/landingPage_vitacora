@@ -61,18 +61,24 @@ const settings = {
   dots: false,
   infinite: true,
   speed: 500,
-  slidesToShow: 3,
+  slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 3000,
   arrows: false,
-responsive: [
-  {
-    breakpoint: 1280, // debajo de 1280 px
-    settings: {
-      slidesToShow: 1, // desde 0 hasta 1279 solo 1 slide
+  responsive: [
+    {
+      breakpoint: 1280, // MENOS de 1280 px
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+    {
+      breakpoint: 9999, // "trampa" para pantallas MUY grandes
+      settings: {
+        slidesToShow: 3,
+      }
     }
-  }
 ]
 };
 
